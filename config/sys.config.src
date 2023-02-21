@@ -1,0 +1,8 @@
+[
+ {demo, [{port, ${PORT:-8080}},
+         {bootstrap_node, '${BOOTSTRAP_NODE:-undefined}'}]},
+ {kernel, [{logger_level, debug},
+           {logger, [{handler, default, logger_std_h,
+                      #{level => debug,
+                        formatter => {logger_formatter, #{single_line => false}}}}]}]}
+].
